@@ -1,4 +1,4 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
     a_matrix = [[1]] * len(matrix)
     an_index = 0
