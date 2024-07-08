@@ -12,7 +12,5 @@ class Square:
         elif size < 0:
             raise ValueError('size must be >= 0')
     def area(self):
-        """calculate
-        self.area = square_area
-    def __mul__(self, other):
-        return data(self.area * other.area)
+        """calculate th current square area"""
+        return(self.size * self.__size)
