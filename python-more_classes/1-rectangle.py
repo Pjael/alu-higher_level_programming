@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""class defines rectangle with private instance attribute width"""
+"""class defines rectangle with private instance attribute width and height"""
 
 
 class Rectangle:
