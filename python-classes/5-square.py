@@ -5,7 +5,7 @@
 class Square:
 
     """defines class and instantiates private instance attribute and public instance method"""
-    def __nit__(self, size=0):
+    def __init__(self, size=0):
         self.__size = size 
 
     """a property to retieve rpivate instance attirbute size"""
@@ -22,11 +22,11 @@ class Square:
         if value < 0:
             raise ValueError('size must be >= 0')
 
-    """public instance method that calculates and returns the current square are"""
+    """public instance method, calculates +returns the current square area"""
     def area(self):
         return(self.__size * self.__size)
 
-    """public instance method that prints in stdout the squre with character #"""
+    """public instance method,  prints in stdout, square in #"""
     def my_print(self):
         if self.__size > 0:
             for column in range(self.__size):
