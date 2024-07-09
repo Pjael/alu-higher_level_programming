@@ -1,19 +1,19 @@
 #!/usr/bin/python3
-"""class that defines a square with a private instance attirbute size"""
+"""class,defines a square with private instance attirbute size"""
 
 
 class Square:
 
-    """defines class and instantiates private instance attribute and public instance method"""
+    """defines class, instantiates private inst. attribut+public instance method"""
     def __init__(self, size=0):
-        self.__size = size 
+        self.__size = size
 
-    """a property to retieve rpivate instance attirbute size"""
+    """property, retieve private instance attirbute size"""
     @property
     def size(self):
         return(self.__size)
 
-    """a setter to set private instance attribute size"""
+    """setter, sets private instance attribute size"""
     @size.setter
     def size(self, value):
         self.__size = value
@@ -22,7 +22,7 @@ class Square:
         if value < 0:
             raise ValueError('size must be >= 0')
 
-    """public instance method, calculates +returns the current square area"""
+    """public instance method, calculates +returns current square area"""
     def area(self):
         return(self.__size * self.__size)
 
