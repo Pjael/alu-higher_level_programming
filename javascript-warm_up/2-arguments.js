@@ -1,12 +1,7 @@
 #!/usr/bin/node
-const args = process.argv;
+const arg = process.argv[2];
 
-if (args = 0){ 
-	console.log("No argument found");
-}
-else (args = 1)=>
-	console.log("Argument found");
-
-if (args > 1){
-	console.log("Arguments found");
-}
+if (argv ===undefined) {
+	console.log("No arguemnt");
+} else {
+	console.log(arg);
