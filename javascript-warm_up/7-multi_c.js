@@ -1,6 +1,10 @@
 #!/usr/bin/node
-String.prototype.repeat = String.prototype.repeat || function(n){
-	n= n || 1;
-	return Array(n+1).join(this);
+const x =parseInt(process.argv[2]);
+
+if (isNaN(x)) {
+	console.log("Missing number of occurrence");
+} else { 
+	for (let i = 0; i < x; i++) { 
+		console.log("C is fun");
+	}
 }
-console.log("C is fun \n".repeat(x))
