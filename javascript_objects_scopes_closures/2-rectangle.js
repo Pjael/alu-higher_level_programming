@@ -8,7 +8,8 @@ class Rectangle {
 	    return Object.create(Rectangle.prototype);
     }
   }
-  _isValid(value) {
+
+  _isValid (value) {
 	  return Number.isInteger(value) && value > 0;
   }
 }
