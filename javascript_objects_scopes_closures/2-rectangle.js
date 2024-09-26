@@ -1,12 +1,16 @@
 #!/usr/bin/node
 class Rectangle {
-	constructor(w, h) {
-		if (w <= 0 || h <= 0 || isNaN(w) || isNaN(h)) {
-			return {};
-		}
-		this.width = w;
-		this.height = h;
-	}
+  constructor (w, h) {
+    if (this._isValid(w) && this._isValid(h)) {
+	    this.width = w;
+	    this.height = h;
+    } else {
+	    return Object.create(Rectangle.prototype);
+    }
+  }
+  _isValid(value) {
+	  return Number.isInteger(value) && value > 0;
+  }
 }
 
 module.exports = Rectangle;
