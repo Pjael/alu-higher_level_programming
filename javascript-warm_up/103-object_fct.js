@@ -4,7 +4,11 @@ const myObject = {
   value: 12,
 
   incr: function () {
-	  this.value++;
+          this.value++;
+  }
+  
+  toString: function () {
+	  return `{ type: `${this.type}`, value: ${this.value}}`;
   }
 };
 
