@@ -7,7 +7,7 @@ if (numbers.length < 2) {
 } else {
   const uniqueNumbers = [];
   for (let i = 0; i < numbers.length; i++) {
-     if (uniqueNumbers.indexOf(numbers[i]) === -1) {
+    if (uniqueNumbers.indexOf(numbers[i]) === -1) {
       uniqueNumbers.push(numbers[i]);
     }
   }
