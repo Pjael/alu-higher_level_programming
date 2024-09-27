@@ -48,3 +48,15 @@ You are not allowed to import any file
 You are not allowed to declare any new variable (var, let, etc..)
 
 --ADVANCED--
+
+100. Write a file that modifies the value od 'myVar' to '333'
+
+101. Write a function that executes x times a fucntion
+the function must be visible from outside
+Prototype: 'function (x, theFunction)'
+
+102. write a function that increments and calls a function.
+the function must be visible from outside
+Prototype: 'function (number, theFunction)'
+
+103. Update this script by adding a new function 'incr' that increments the integer 'value'. you are not allowed to use var.
